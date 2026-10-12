@@ -58,7 +58,8 @@ public class DataBaseServer {
             HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         List<XMLMessage> resp = new ArrayList<XMLMessage>();
-        String sql = "SELECT * from USERS";
+        // String sql = "SELECT * from USERS";
+                String sql = "SELECT name from USER";
         try {
             java.sql.Connection connection =
                     org.owasp.benchmark.helpers.DatabaseHelper.getSqlConnection();
