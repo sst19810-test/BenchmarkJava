@@ -59,7 +59,7 @@ public class DataBaseServer {
             throws ServletException, IOException {
         List<XMLMessage> resp = new ArrayList<XMLMessage>();
         // String sql = "SELECT * from USERS";
-                String sql = "SELECT name from USER";
+                String sql = "SELECT * from USER";
         try {
             java.sql.Connection connection =
                     org.owasp.benchmark.helpers.DatabaseHelper.getSqlConnection();
